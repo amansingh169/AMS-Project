@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <title>Player records</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="input-form">
+          <form class="player-form">
+            <h1>Player Records</h1>
+            <label for="player-name">Player Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <!-- <label for="player-name">Date:</label>
+            <input type="date" id="name" name="name" required />
+            
+            <label for="player-name">Phase:</label>
+            <input type="text" id="phase" name="phase" required /> -->
+
+            <button class="button" type="submit">Fetch records</button>
+          </form>
+        </div>
+
+        <div id="chartsContainer"></div>
+      </div>
+    </main>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+
+  <script type="module" src="script.js"></script>
+</html>
